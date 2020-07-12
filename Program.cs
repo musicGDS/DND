@@ -7,7 +7,7 @@ namespace DnD
     {
         static void Main()
         {
-            //List to store characterss
+            //List to store characters
             List<Character> savedCharacters = new List<Character>();
             int choice = 0;
 
