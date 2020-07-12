@@ -1,0 +1,12 @@
+/Users/gediminassudnikavicius/Develop/DnD/DnD/bin/Release/netcoreapp3.1/DnD.deps.json
+/Users/gediminassudnikavicius/Develop/DnD/DnD/bin/Release/netcoreapp3.1/DnD.runtimeconfig.json
+/Users/gediminassudnikavicius/Develop/DnD/DnD/bin/Release/netcoreapp3.1/DnD.runtimeconfig.dev.json
+/Users/gediminassudnikavicius/Develop/DnD/DnD/bin/Release/netcoreapp3.1/DnD.dll
+/Users/gediminassudnikavicius/Develop/DnD/DnD/bin/Release/netcoreapp3.1/DnD.pdb
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.csprojAssemblyReference.cache
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.AssemblyInfoInputs.cache
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.AssemblyInfo.cs
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.csproj.CoreCompileInputs.cache
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.dll
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.pdb
+/Users/gediminassudnikavicius/Develop/DnD/DnD/obj/Release/netcoreapp3.1/DnD.genruntimeconfig.cache

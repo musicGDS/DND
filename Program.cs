@@ -20,8 +20,8 @@ namespace DnD
                 do
                 {
                     Console.WriteLine("Please choose from the following:\n" +
-                "1 - Create random character " +
-                "2 - Create character manually " +
+                "1 - Create a random character " +
+                "2 - Create a character manually " +
                 "3 - Show saved characters ");
                     string choiceS = Console.ReadLine();
                     if (int.TryParse(choiceS, out choice) && choice > 0
