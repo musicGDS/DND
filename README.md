@@ -12,11 +12,10 @@ Wisdom (WIS),
 Charisma (CHA), 
 Hitpoints (HP).
 
-The program menu asks for numeric user input for 4 menu choices:
+The program menu asks for numeric user input for 3 menu choices:
 1 - Create random character
 2 - Create character manually
 3 - Show saved characters
-(4 - Exit the program)
 
 1 - Create random character. Creater character with random name and stats values and prints it in the console.
 2 - Create character manually. Lets user to create a character manually by entering promted values.
