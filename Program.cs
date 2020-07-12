@@ -15,15 +15,21 @@ namespace DnD
             do
             {
                 Console.WriteLine("___________________________________________");
-                
+
+                bool wChoice = true;
                 do
                 {
                     Console.WriteLine("Please choose from the following:\n" +
                 "1 - Create random character " +
                 "2 - Create character manually " +
                 "3 - Show saved characters ");
-                    choice = Convert.ToInt32(Console.ReadLine());
-                } while (choice < 1 || choice > 3);
+                    string choiceS = Console.ReadLine();
+                    if (int.TryParse(choiceS, out choice) && choice > 0
+                    && choice < 4)
+                    {
+                        wChoice = false;
+                    }
+                } while (wChoice);
 
                 //Choose a menu item
                 switch (choice)
@@ -138,10 +144,10 @@ namespace DnD
                 }
             } while (wName);
 
+            Console.WriteLine("Enter Srenght (from 1 to 6)");
             bool wStrenght = true;
             do
             {
-                Console.WriteLine("Enter Srenght (from 1 to 6)");
                 string mStrenghtS = Console.ReadLine();
                 if (int.TryParse(mStrenghtS, out mStrenght) && mStrenght > 0
                     && mStrenght < 7)
@@ -156,10 +162,10 @@ namespace DnD
             }
             while (wStrenght);
 
+            Console.WriteLine("Enter Dexterity (from 1 to 6)");
             bool wDexterity = true;
             do
             {
-                Console.WriteLine("Enter Dexterity (from 1 to 6)");
                 string mDexterityS = Console.ReadLine();
                 if (int.TryParse(mDexterityS, out mDexterity) && mDexterity > 0
                     && mDexterity < 7)
@@ -172,51 +178,67 @@ namespace DnD
                 }
             } while (wDexterity);
 
+            Console.WriteLine("Enter Constitution (from 1 to 6)");
             bool wConstitution = true;
             do
             {
-                Console.WriteLine("Enter Constitution (from 1 to 6)");
                 string mConstitutionS = Console.ReadLine();
                 if (int.TryParse(mConstitutionS, out mConstitution) && mConstitution > 0
                     && mConstitution < 7)
                 {
                     wConstitution = false;
                 }
+                else
+                {
+                    Console.WriteLine("Please provide numeric value from 1 to 6");
+                }
             } while (wConstitution);
 
+            Console.WriteLine("Enter Intelligence (from 1 to 6)");
             bool wIntelligence = true;
             do
             {
-                Console.WriteLine("Enter Intelligence (from 1 to 6)");
                 string mIntelligenceS = Console.ReadLine();
                 if (int.TryParse(mIntelligenceS, out mIntelligence) && mIntelligence > 0
                     && mIntelligence < 7)
                 {
                     wIntelligence = false;
                 }
+                else
+                {
+                    Console.WriteLine("Please provide numeric value from 1 to 6");
+                }
             } while (wIntelligence);
 
+            Console.WriteLine("Enter Wisdom (from 1 to 6)");
             bool wWisdom = true;
             do
             {
-                Console.WriteLine("Enter Wisdom (from 1 to 6)");
                 string mWisdomS = Console.ReadLine();
                 if (int.TryParse(mWisdomS, out mWisdom) && mWisdom > 0
                     && mWisdom < 7)
                 {
                     wWisdom = false;
                 }
+                else
+                {
+                    Console.WriteLine("Please provide numeric value from 1 to 6");
+                }
             } while (wWisdom);
 
+            Console.WriteLine("Enter Charisma (from 1 to 6)");
             bool wCharisma = true;
             do
             {
-                Console.WriteLine("Enter Charisma (from 1 to 6)");
                 string mCharismaS = Console.ReadLine();
                 if (int.TryParse(mCharismaS, out mCharisma) && mCharisma > 0
                     && mCharisma < 7)
                 {
                     wCharisma = false;
+                }
+                else
+                {
+                    Console.WriteLine("Please provide numeric value from 1 to 6");
                 }
             } while (wCharisma);
 
