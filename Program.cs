@@ -15,14 +15,13 @@ namespace DnD
             do
             {
                 Console.WriteLine("___________________________________________");
-                Console.WriteLine("Please choose fro the following:\n" +
-                "1 - Create random character " +
-                "2 - Create character manually " +
-                "3 - Show saved characters " +
-                "4 - Quit");
                 
                 do
                 {
+                    Console.WriteLine("Please choose from the following:\n" +
+                "1 - Create random character " +
+                "2 - Create character manually " +
+                "3 - Show saved characters ");
                     choice = Convert.ToInt32(Console.ReadLine());
                 } while (choice < 1 || choice > 3);
 
@@ -31,14 +30,14 @@ namespace DnD
                 {
                     case 1:
                         Console.WriteLine("___________________________________________");
-                        Console.WriteLine("Creating random character:");
+                        Console.WriteLine("Creating the random character:");
                         Character randChar = RandomCharacter();
                         printCharacter(randChar);
                         savedCharacters.Add(randChar);
                         break;
                     case 2:
                         Console.WriteLine("___________________________________________");
-                        Console.WriteLine("Create character manually:");
+                        Console.WriteLine("Create the character manually:");
                         Character manChar = CreateCharacterManualy();
                         printCharacter(manChar);
                         savedCharacters.Add(manChar);
@@ -46,18 +45,27 @@ namespace DnD
                     case 3:
                         Console.WriteLine("___________________________________________");
                         int charCount = savedCharacters.Count;
+
+                        //Check if there is any character in the list 
+                        if (charCount == 0)
+                        {
+                            Console.WriteLine("No characters saved yet");
+                            break;
+                        }
+
                         Console.WriteLine("Showing saved characters:");
-                        Console.WriteLine("Enter the number of a character " +
-                            "to see its stats");
-                    
+                        
                         for (int i = 0; i < charCount; i++)
                         {
                             Console.WriteLine("{0} - {1} ", i, savedCharacters[i].Name);
                         }
 
+                        
                         int cChoice = -1;
                         do
                         {
+                            Console.WriteLine("Enter the number of a character " +
+                            "to see its stats");
                             cChoice = Convert.ToInt32(Console.ReadLine());
                         } while (cChoice < 0 || cChoice >= charCount);
                         
@@ -66,11 +74,10 @@ namespace DnD
 
                         break;
                     default:
-                        Console.WriteLine("Please enter: 1, 2, 3 or 4");
+                        Console.WriteLine("Please enter: 1, 2 or 3");
                         break;
                 }
-            } while (choice != 4);
-            Environment.Exit(0);
+            } while (true);
         }
 
         //Generates random character
